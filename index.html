@@ -4,8 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My First Github Repo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div>
+    <h1>My First Website</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nesciunt possimus sunt explicabo laborum. Modi, voluptatibus recusandae repellendus quaerat cum, atque eligendi blanditiis aut fugit tempora ullam quia. Aliquid, at?</p>
+  </div>
 </body>
 </html>
+
+<!-- w q  -->
+ <!-- keybord up arrow in terminal get previous commit -->
+<!-- code . for open repo in git hub -->
+ <!-- u means untracked
+ a means added -->
+
+
+
+  <!-- # Breakdown:
+
+# git branch: This is the main command to work with branches in Git.
+# -M: This option is specifically used to move the HEAD pointer to the new branch name.
+# main: This is the new name you're giving to the current branch.
+
+# In simpler terms:
+# Imagine your current branch is named "master."
+
+# git branch -M main will:
+#   - Rename the "master" branch to "main."
+#   - Update the HEAD pointer to now point to the "main" branch. -->
+
+
+<!-- Purpose:
+
+This command is used to push your local changes from the main branch to the remote repository named origin. Additionally, it sets up a tracking relationship between your local main branch and the remote origin/main branch.
+
+Breakdown:
+
+git push: This is the main command for uploading local commits to a remote repository.
+-u: This option sets up a tracking relationship between your local main branch and the remote origin/main branch. This means that subsequent git push commands can be simplified to just git push without specifying the branch names.
+origin: This is the name of the remote repository you're pushing to. It's a common default name, but you can have other remote names as well.
+main: This is the name of the local branch you're pushing.
+In Simpler Terms:
+
+Imagine you're working on a project with a team. Your local changes are on the main branch, and you want to share them with the rest of the team. The remote repository origin is where everyone's work is stored.
+
+git push -u origin main does two things:
+It sends your local main branch's changes to the remote origin repository.
+It tells Git that main is linked to origin/main, so you don't have to specify both names every time you push. -->
